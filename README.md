@@ -1,24 +1,32 @@
-# README
+# Messaging APIを用いたLINEの大喜利Bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 開発環境
 
-Things you may want to cover:
+Ruby2.6.5/Ruby on Rails6.0.3.4/Mysql/git hub/Sequel Pro/Messaging API
 
-* Ruby version
+## 実装した機能
 
-* System dependencies
+・応答メッセージ
+・プッシュメッセージ
+・ローカル環境でのテストを行うためngrok導入
+・wheneverを使った指定した時間のタスク起動（デプロイはherokuで行っているため本番環境ではwheneverは使っていません）
 
-* Configuration
+## テーブル設計
 
-* Database creation
+### Usersテーブル
 
-* Database initialization
+| Column  | Type   | Option |
+|---------|--------|--------|
+| user_id | string |        |
 
-* How to run the test suite
+### Postsテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column  | Type   | Option |
+|---------|--------|--------|
+| name    | string |        |
 
-* Deployment instructions
+### repriesテーブル
 
-* ...
+| Column  | Type   | Option |
+|---------|--------|--------|
+| text    | string |        |
