@@ -59,3 +59,5 @@ gem 'line-bot-api'
 gem 'dotenv-rails'
 
 gem 'jwt'
+
+gem 'whenever', require: false
