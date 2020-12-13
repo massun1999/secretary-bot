@@ -14,7 +14,8 @@ Ruby2.6.5/Ruby on Rails6.0.3.4/Mysql/git hub/Sequel Pro/Messaging API
 
 - 応答メッセージ
 - プッシュメッセージ
-− 友達追加イベントでusersテーブルにLINEのユーザーIDが保存
+− 友達追加イベントでusersテーブルにLINEのユーザーIDを保存
+- Botがメッセージを送信する際は予めデータベース内にあるコンテンツをランダムに取得し送信される仕様です。
 - ローカル環境でのテストを行うためngrok導入
 - wheneverを使った指定した時間のタスク起動（デプロイはherokuで行っているため本番環境ではwheneverは使っていません）
 
